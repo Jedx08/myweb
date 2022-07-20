@@ -12,7 +12,8 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-        /*-----navbar-----*/
+
+/*-----navbar-----*/
 .navbar{
     width: 85%;
     margin: auto;
@@ -49,24 +50,100 @@ body{
 .navbar ul li:hover::after{
     width: 100%;
 }
-        /* homepage welcome*/
+
+/* homepage welcome*/
 .content{
     width: 100%;
-    position: absolute;
-    top: 40%;
+    position: relative;
+    margin-top: 15%;
     text-align: center;
     color: white;
+    margin-bottom: 15%;
 }
 .content h1{
     font-size: 70px;
     font-weight: bold;
+    position: relative
 }
 .content p{
     margin: 20px auto;
     font-weight: 100;
     line-height: 25px;
+    position: relative
 }
-        /*-----Menu-----*/
+.mapouter{
+    position:relative;
+    text-align:right;
+    width:600px;
+    height:500px;
+    margin: 10px;
+}  
+.gmap_canvas {
+    width:600px;
+    height:500px;
+}
+.gmap_iframe {
+    height:500px!important;
+}
+#fus{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+#findus{
+    width: 85%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#cimg{
+    position: relative;
+    width:500px;
+    height:300px;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+#findus ul li{
+    list-style: none;
+}
+#findus ul li a{
+    text-decoration: none;
+}
+.footer-1 div div a{
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+.fbcom{
+    padding: 8px 13px 7px 13px;
+    background-color: #1877F2;
+    border-radius: 10px;
+}
+.twitcom{
+    padding: 8px 8px 7px 8px;
+    background-color: #1DA1F2;
+    border-radius: 10px;
+}
+.fa-instagram{
+    padding: 8px 7px 8px 9px;
+    background-color: #E4405F;
+    border-radius: 10px;
+}
+.fa-linkedin{
+    padding: 8px 10px 8px 10px;
+    background-color: #0A66C2;
+    border-radius: 10px;
+}
+.fa-pinterest{
+    padding: 8px 10px 8px 9px;
+    background-color: #BD081C;
+    border-radius: 10px;
+}
+/*-----Menu-----*/
 #menu{
     text-align: center;
     color: #fff;
@@ -96,13 +173,14 @@ body{
     border: 2px solid red;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
+    padding-bottom: 10px;
 }
 .container-menu div img{
     width: 290px;
     height: 300px;
     border-radius: 25px;
 }
-        /*----About us-----*/
+/*----About us-----*/
 #about{
     text-align: center;
     color: #fff;
@@ -140,7 +218,7 @@ body{
     padding: 55px;
 }
 /*-----Mobile View----*/
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px) {
     #menu{
         width: 100%;
         margin: auto;
@@ -156,4 +234,25 @@ body{
     #aboutk{
         flex-direction: column;
     }
+    #findus{
+        flex-direction: column;
+    }
+    #cimg{
+        margin-top: 150px;
+    }
 }
+/*@media screen and (max-width: 600px) {
+    .content p{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #cimg{
+        font-size: 30px;
+    }
+    #fft{
+        font-size: 20px;
+    }
+    .navbar ul li{
+        font-size: 30px;
+    }
+}*/
